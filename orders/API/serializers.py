@@ -27,5 +27,4 @@ class OrderSerializer(ModelSerializer):
         return obj.date.strftime("%m/%d/%Y")
 
     def get_total(self, obj):
-        import pdb; pdb.set_trace()
         return obj.product.price
